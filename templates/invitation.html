@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Explorar Invitaciones{% endblock %}
+
+{% block content %}
+<section class="invitation-section">
+    <h2>Elige tu Estilo de Invitación</h2>
+    <div class="invitation-grid">
+        <div class="invitation-card">
+            <img src="{{ url_for('static', filename='img/invitacion1.jpeg') }}" alt="Invitación Boda">
+            <h3>Bodas</h3>
+            <p>Diseños elegantes y modernos para bodas.</p>
+        </div>
+        <div class="invitation-card">
+            <img src="{{ url_for('static', filename='img/invitacion2.jpg') }}" alt="Invitación XV Años">
+            <h3>XV Años</h3>
+            <p>Invitaciones deslumbrantes para una celebración inolvidable.</p>
+        </div>
+        <!-- Agregar más tarjetas de invitaciones aquí -->
+    </div>
+</section>
+{% endblock %}

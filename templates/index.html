@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block title %}Inicio - Invitaciones Digitales{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <h1>Crea Invitaciones Digitales Únicas</h1>
+        <p>Diseños modernos y personalizados para tus momentos especiales.</p>
+        <a href="{{ url_for('invitation') }}" class="btn-primary">Explorar Invitaciones</a>
+    </div>
+</section>
+
+<section class="features">
+    <h2>Nuestros Servicios</h2>
+    <div class="feature-grid">
+        <div class="feature-item">
+            <img src="{{ url_for('static', filename='img/icon1.png') }}" alt="Personalización">
+            <h3>Personalización</h3>
+            <p>Crea invitaciones completamente a tu gusto.</p>
+        </div>
+        <div class="feature-item">
+            <img src="{{ url_for('static', filename='img/icon2.png') }}" alt="Variedad de Estilos">
+            <h3>Variedad de Estilos</h3>
+            <p>Encuentra el diseño perfecto para cualquier ocasión.</p>
+        </div>
+        <div class="feature-item">
+            <img src="{{ url_for('static', filename='img/icon3.png') }}" alt="Soporte">
+            <h3>Soporte</h3>
+            <p>Asistencia personalizada para que todo salga perfecto.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}
